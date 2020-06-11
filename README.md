@@ -6,6 +6,7 @@ particular:
 - Project 'a' has class in its `test` configuration
 - Project 'b' depends on `a`'s `test` and uses it
 
+Issue in `bloop` repo https://github.com/scalacenter/bloop/issues/1311
 
 ### The Gradle project works fine
 
@@ -380,7 +381,7 @@ We see that there are no dependencies declared from `b-test.json` to `a-test`
 
 ### If we add the dependencies manually
 
-Added to `dependencies`, and `platform.classPath`
+Added to `dependencies`, `classPath`, and `platform.classPath`
 
 <details>
 
