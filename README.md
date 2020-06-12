@@ -681,7 +681,12 @@ Added to `dependencies`, `classPath`, and `platform.classPath`
 
 </details>
 
-### blooo test works for `b` as well
+### bloop `b` cannot see `a`-non-test files
+
+There's no dependency listing in `b` on `a` non-test files, so `BSpec`'s reference to
+`Meh` in `a` doesn't work.
+
+### bloop test works for `b` as well
 
 ```shell
 ❯ bloop test b
