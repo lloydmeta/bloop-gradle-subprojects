@@ -6,7 +6,7 @@ dependencies {
 }
 
 configurations.create("tests") {
-  extendsFrom(configurations.testRuntime.get())
+  extendsFrom(configurations.testImplementation.get())
 }
 tasks.register<Jar>("testJar") {
   archiveClassifier.set("tests")

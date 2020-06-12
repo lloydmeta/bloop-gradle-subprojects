@@ -10,7 +10,7 @@ class CSpec extends BSpecLike {
     assert(Lol.lol == "lol")
   }
 
-  it("should meh") {
-    assert(meh == "meh")
+  it("should use beHelper") {
+    assert(beHelper == "helpful")
   }
 }
