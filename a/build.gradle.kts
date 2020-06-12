@@ -9,7 +9,7 @@ tasks.register<Jar>("testJar") {
     from(sourceSets.test.get().output)
 }
 configurations.create("tests") {
-    extendsFrom(configurations.testRuntime.get())
+    extendsFrom(configurations.testImplementation.get())
 }
 artifacts {
     add("tests", tasks.named("testJar"))
