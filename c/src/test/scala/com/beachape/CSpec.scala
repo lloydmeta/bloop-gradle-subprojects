@@ -1,6 +1,6 @@
 package com.beachape
 
-class BSpec extends _0ASpecLike {
+class CSpec extends BSpecLike {
 
   it("should yo") {
     assert(yo == "yo")
@@ -8,5 +8,9 @@ class BSpec extends _0ASpecLike {
 
   it("should lol") {
     assert(Lol.lol == "lol")
+  }
+
+  it("should meh") {
+    assert(meh == "meh")
   }
 }
