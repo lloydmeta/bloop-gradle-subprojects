@@ -9,4 +9,8 @@ class BSpec extends ASpecLike {
   it("should lol") {
     assert(Lol.lol == "lol")
   }
+
+  it("should meh") {
+    assert(Meh.speak == "meh")
+  }
 }
