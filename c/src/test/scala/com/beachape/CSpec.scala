@@ -13,4 +13,8 @@ class CSpec extends BSpecLike {
   it("should use beHelper") {
     assert(beHelper == "helpful")
   }
+
+  it("should meh") {
+    assert(Meh.speak == "meh")
+  }
 }
