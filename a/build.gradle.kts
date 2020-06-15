@@ -12,5 +12,5 @@ configurations.create("tests") {
     extendsFrom(configurations.testImplementation.get())
 }
 artifacts {
-    add("tests", tasks.named("testJar"))
+    add("tests", tasks.getByName("testJar"))
 }

@@ -14,5 +14,5 @@ tasks.register<Jar>("testJar") {
   from(sourceSets.test.get().output)
 }
 artifacts {
-  add("tests", tasks.named("testJar"))
+  add("tests", tasks.getByName("testJar"))
 }
